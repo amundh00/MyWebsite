@@ -17,7 +17,7 @@ body{
 }
 
 header{
-    background-color: whitesmoke;
+    background-color: white;
     height: 100px;
     margin-top: 0;
 }
@@ -38,31 +38,42 @@ h1{
     grid-template-columns: auto auto auto auto auto auto;
     justify-content: center;
     margin: 0;
-    padding: 0;
+    padding: o;
     list-style: none;
     padding: 0;
+}
+
+.headernav > ul > li{
+    margin: 0 50px;
 }
 
 .headernav > ul > li > a{
     text-align: center;
     list-style: none;
     text-decoration: none;
+    color: black;
     cursor: pointer;
     margin: 0;
+    padding: 5px;
     width: 100px;
     background-color: gray;
 }
 
-.headernav > ul > li:hover{
+.headernav > ul > li a:hover{
     color: black;
     background-color: white;
 }
 
-.headernav > ul > li > a{
-    text-decoration: none;
-    color: black;
-}
-
 @media (min-width: 576px){
     
+}
+
+/*HEROPICTURE*/
+
+.heropicture{
+    text-align: center;
+    position: relative;
+    margin-top: 0c;
+    width: 100%;
+    overflow: hidden;
 }
