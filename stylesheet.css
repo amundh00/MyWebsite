@@ -1,8 +1,53 @@
+@font-face {
+    font-family: lemonregular;
+    src: url(fonts/LEMONMILK-Regular.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
 /*********
 Header
 **********/
+body{
+    font-family: 'lemonregular', Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    margin-top: 0;
+}
 
 header{
-    background-color: aqua;
+    background-color: whitesmoke;
+    height: 100px;
+    margin-top: 0;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headernav > ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0px; 
+    list-style: none;
+    padding: 0;
+}
+
+.headernav > ul > li{
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.headernav > ul > li > a{
+    text-decoration: none;
+    color: black;
+}
+
+@media (min-width: 576px){
     
 }
