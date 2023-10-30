@@ -33,6 +33,35 @@ h1{
     align-items: center;
 }
 
+.herolink{
+    background-color: #768E98;
+    width: 170px;
+    height: 25px;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.heropicture > p{
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+
+}
+
+.headerlink:hover{
+    background-color: white;
+    color: #768E98;
+}
+
 .headernav > ul{
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
@@ -69,19 +98,97 @@ h1{
     
 }
 
-/*HEROPICTURE*/
+/************
+HEROPICTURE
+************/
 
 .heropicture{
     text-align: center;
     position: relative;
     margin-top: 0c;
     width: 100%;
-    height: 700px;
+    height: 650px;
     overflow: hidden;
+    object-fit: cover;
 }
 
-footer{
-    background-color: grey;
-    height: 200px;
 
+
+
+/**************
+    FOOTER
+**************/
+
+
+footer{
+    margin-top: 0px;
+    padding: 10px 15%;
+    background-color: #D9D9D9;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+    height: 350px;
+}
+
+footer > div{
+    text-align: center;
+    margin: 50px;
+}
+
+footer > div > h2{
+    font-weight: 500;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.col-1 > a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    background-color: #EDCBA4;
+    margin-bottom: 10px;
+}
+
+footer form input{
+    width: 350px;
+    height: 20px;
+    text-align: center;
+    margin: 20px 0 20px 0;
+    outline: none;
+    background-color: #EDCBA4;
+    border: none;
+}
+
+footer form textarea{
+    width: 350px;
+    height: 50px;
+    text-align: left;
+    margin: 5px 0 5px 0;
+    outline: none;
+    background-color: #EDCBA4;
+    border: none;
+}
+
+footer form button{
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px 30px;
+    font-size: 15px;
+    width: 355px;
+    height: 40px;
+}
+
+footer form button:hover{
+    background: transparent;
+    color: black;
+    border: 2px solid black;
+}
+
+.col-1 a:hover{
+    color: #10596A;
+    background-color: white;
 }
