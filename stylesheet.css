@@ -145,6 +145,7 @@ About Us
 *************/
 
 hr{
+    width: 70%;
     height: 1px;
     background-color: black;
 }
