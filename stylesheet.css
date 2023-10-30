@@ -151,6 +151,7 @@ hr{
 
 .card-right{
     display: flex;
+    align-items: center;
     margin: 100px;
 }
 
@@ -175,6 +176,7 @@ hr{
 
 .card-left{
     display: flex;
+    align-items: center;
     margin: 100px;
 }
 
