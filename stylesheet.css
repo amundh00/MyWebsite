@@ -19,7 +19,7 @@ h1,h2,h3{
 p{font-family: 'lemonlight', Arial, Helvetica, sans-serif;}
 
 main{
-    margin: 50px 0 50px 0;
+    margin: 0 0 50px 0;
 }
 
 /*********
@@ -106,7 +106,7 @@ h1{
     margin: 0;
     padding: 5px;
     width: 100px;
-    background-color: #EDCBA4;
+    background-color: transparent;
 }
 
 .headernav > ul > li a:hover{
@@ -221,7 +221,7 @@ HEROPICTURE
 footer{
     margin-top: 0px;
     padding: 10px 15%;
-    background-color: #D9D9D9;
+    background-color: #10596A;
     color: black;
     display: flex;
     flex-direction: column;
@@ -246,7 +246,7 @@ footer > div > h2{
     display: block;
     text-decoration: none;
     color: black;
-    background-color: #EDCBA4;
+    background-color: transparent;
     margin-bottom: 10px;
 }
 
@@ -256,7 +256,7 @@ footer form input{
     text-align: center;
     margin: 20px 0 20px 0;
     outline: none;
-    background-color: #EDCBA4;
+    background-color: transparent;
     border: none;
 }
 
@@ -322,28 +322,28 @@ footer > div > h2{
     display: block;
     text-decoration: none;
     color: black;
-    background-color: #EDCBA4;
+    background-color: transparent;
     margin-bottom: 10px;
 }
 
 footer form input{
     width: 350px;
-    height: 20px;
+    height: 30px;
     text-align: center;
-    margin: 20px 0 20px 0;
+    margin: 20px 0 10px 0;
     outline: none;
-    background-color: #EDCBA4;
-    border: none;
+    background-color: transparent;
+    border: solid 2px white;
 }
 
 footer form textarea{
     width: 350px;
-    height: 50px;
+    height: 60px;
     text-align: left;
     margin: 5px 0 5px 0;
     outline: none;
-    background-color: #EDCBA4;
-    border: none;
+    background-color: transparent;
+    border: solid 2px white;
 }
 
 footer form button{
