@@ -5,6 +5,19 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: lemonlight;
+    src: url(fonts/LEMONMILK-Light.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1,h2,h3{
+    font-family: 'lemonregular',Arial, Helvetica, sans-serif;
+}
+
+p{font-family: 'lemonlight', Arial, Helvetica, sans-serif;}
+
 /*********
 Header
 **********/
@@ -121,6 +134,65 @@ h1{
     width: 300px;
     height: 300px;
 }
+
+/*************
+About Us
+*************/
+
+hr{
+    height: 2px;
+    background-color: black;
+}
+
+.card-right{
+    display: flex;
+    margin: 100px;
+}
+
+.card-right > div > h2{
+    text-align: center;
+    font-size: 2em;
+}
+
+.card-right > div > p{
+    font-size: 1.2em;
+    line-height: 35px;
+}
+
+.card-right > img{
+    display: flex;
+    width: 450px;
+    height: auto;
+    margin-left: 50px;
+} 
+
+/*Left*/
+
+.card-left{
+    display: flex;
+    margin: 100px;
+}
+
+.card-left > div > h2{
+    text-align: center;
+    font-size: 2em;
+}
+
+.card-left > div{
+    margin-top: 150px;
+}
+
+.card-left > div > p{
+    font-size: 1.2em;
+    line-height: 35px;
+}
+
+.card-left > img{
+    display: flex;
+    width: 450px;
+    height: auto;
+    margin-right: 50px;
+} 
 
 /************
 HEROPICTURE
