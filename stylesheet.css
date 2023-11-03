@@ -35,7 +35,7 @@ body{
 }
 
 header{
-    background-color: #4190be;
+    background-color: #768E98;
     height: 130px;
     margin-top: 0;
     padding-top: 10px;
@@ -54,7 +54,7 @@ h1{
 }
 
 .herolink{
-    background-color: #4190be;
+    background-color: #768E98;
     width: 170px;
     height: 25px;
     position: absolute;
@@ -116,7 +116,7 @@ h1{
 
 .yt-container{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
     justify-content: center; 
     width: 100%;
     gap: 50px;
@@ -124,8 +124,11 @@ h1{
 
 }
 
-@media (min-width: 576px){
-    
+@media (min-width: 800px){
+    .yt-container{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
 }
 
 /************
@@ -139,6 +142,31 @@ h1{
     width: 300px;
     height: 300px;
 }
+
+/*************
+    Photo
+*************/
+    
+.photo-card{
+    display: flex;
+    justify-content: center;
+    margin-left: 30%;
+}
+
+.photo-card > a > img{  
+    width: 500px;
+    height: auto;
+}
+
+.photo-card > h2{
+    position: absolute;
+    background-color: white;
+    padding: 5px 50px;
+    font-size: 2em;
+    font-family: 'lemonlight';
+}
+
+
 
 /*************
 About Us
@@ -273,7 +301,7 @@ HEROPICTURE
     font-size: 20px;
     margin: 10px;
     border-radius: 20px;
-    background-color: #10596A;
+    background-color: #768E98;
     color: white;
     border: none;
     text-align: center;
@@ -329,6 +357,10 @@ HEROPICTURE
 }
 
 
+
+
+
+
 /**************
     FOOTER
 **************/
@@ -336,7 +368,7 @@ HEROPICTURE
 footer{
     margin-top: 0px;
     padding: 10px 15%;
-    background-color: #4190be;
+    background-color: #768E98;
     color: white;
     display: flex;
     flex-direction: column;
@@ -381,7 +413,7 @@ footer form textarea{
     text-align: left;
     margin: 5px 0 5px 0;
     outline: none;
-    background-color: #4190be;
+    background-color: #768E98;
     border: none;
 }
 
@@ -412,7 +444,7 @@ footer form button:hover{
 footer{
     margin-top: 0px;
     padding: 10px 15%;
-    background-color: #4190be;
+    background-color: #768E98;
     color: white;
     display: flex;
     flex-direction: row;
