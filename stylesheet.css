@@ -49,6 +49,7 @@ header > a{
 h1{
     margin-bottom: 5px;
     margin-top: 0;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -257,10 +258,14 @@ HEROPICTURE
 }
 
 .socials > a{
-    font-size: 7em;
+    font-size: 6em;
     color: white;
-
 }
+
+.socials > a:hover{
+    color: #10596A;
+}
+
 
 /***************
    CONTACT ME
