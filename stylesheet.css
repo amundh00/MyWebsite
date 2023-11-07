@@ -246,6 +246,22 @@ HEROPICTURE
     object-fit: cover;
 }
 
+.socials{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    gap: 150px;
+}
+
+.socials > a{
+    font-size: 7em;
+    color: white;
+
+}
+
 /***************
    CONTACT ME
 ***************/
