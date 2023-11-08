@@ -29,10 +29,73 @@ Header
 body{
     font-family: 'lemonregular', Arial, Helvetica, sans-serif;
     min-height: 100vh;
+
     margin: 0;
     padding: 0;
     margin-top: 0;
 }
+
+header{
+    background-color: #768E98;
+    height: 130px;
+    margin-top: 0;
+    padding-top: 10px;
+}
+
+header > a{
+    text-decoration: none;
+    color: white;
+}
+
+h1{
+    margin-bottom: 5px;
+    margin-top: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headernav > ul{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding: o;
+    list-style: none;
+    padding: 0;
+}
+
+.headernav > ul > li{
+    margin: 0 20px;
+}
+
+.headernav > ul > li > a{
+    text-align: center;
+    border-radius: 10px;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    margin: 0;
+    font-size: 1.2em;
+    padding: 5px;
+    width: 100px;
+    background-color: transparent;
+}
+
+.headernav > ul > li a:hover{
+    color: black;
+    background-color: white;
+}
+
+.heropicture{
+    display: none;
+}
+
+@media (min-width: 800px){
 
 header{
     background-color: #768E98;
@@ -53,34 +116,6 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.herolink{
-    background-color: #768E98;
-    width: 170px;
-    height: 25px;
-    position: absolute;
-    top: 50%;
-    left: 35%;
-    transform: translate(-50%, -50%);
-    align-items: center;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    padding: 10px;
-}
-
-.heropicture > p{
-    position: absolute;
-    top: 30%;
-    left: 35%;
-    transform: translate(-50%, -50%);
-    font-size: 1.5em;
-}
-
-.headerlink:hover{
-    background-color: white;
-    color: #768E98;
 }
 
 .headernav > ul{
@@ -105,6 +140,7 @@ h1{
     color: white;
     cursor: pointer;
     margin: 0;
+    font-size: 1em;
     padding: 5px;
     width: 100px;
     background-color: transparent;
@@ -114,6 +150,12 @@ h1{
     color: black;
     background-color: white;
 }
+
+}
+
+/*************** 
+   Film Page
+***************/
 
 .yt-container{
     display: grid;
@@ -235,37 +277,56 @@ hr{
 /************
 HEROPICTURE
 ************/
-
-.heropicture{
-    text-align: center;
-    position: relative;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    object-fit: cover;
+.desktophero{
+    display: none;
 }
 
-.socials{
+.phonehero{
     display: flex;
-    flex-direction: row;
-    position: absolute;
-    top: 30%;
-    left: 30%;
-    transform: translate(-50%, -50%);
-    gap: 150px;
-}
-
-.socials > a{
-    font-size: 4em;
-    color: white;
-}
-
-.socials > a:hover{
-    color: #10596A;
 }
 
 
+@media (min-width: 800px){
+    .desktophero{
+        display: flex;
+    }
+
+    .phonehero{
+        display: none;
+    }
+
+
+    .heropicture{
+        display: flex;
+        text-align: center;
+        position: relative;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        object-fit: cover;
+    }
+
+    .socials{
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 30%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        gap: 150px;
+    }
+
+    .socials > a{
+        font-size: 4em;
+        color: white;
+    }
+
+    .socials > a:hover{
+        color: #10596A;
+    }
+
+}
 /***************
    CONTACT ME
 ***************/
@@ -429,8 +490,9 @@ footer form input{
     text-align: center;
     margin: 20px 0 20px 0;
     outline: none;
+    color: white;
     background-color: transparent;
-    border: none;
+    border: 2px solid white;
 }
 
 footer form textarea{
@@ -439,8 +501,9 @@ footer form textarea{
     text-align: left;
     margin: 5px 0 5px 0;
     outline: none;
+    color: white;
     background-color: #768E98;
-    border: none;
+    border: 2px solid white;
 }
 
 footer form button{
@@ -504,7 +567,7 @@ footer form input{
     height: 30px;
     text-align: center;
     margin: 20px 0 10px 0;
-    outline: none;
+    outline: 2px white;
     background-color: transparent;
     border: solid 2px white;
     color: white;
@@ -515,7 +578,6 @@ footer form textarea{
     height: 60px;
     text-align: left;
     margin: 5px 0 5px 0;
-    outline: none;
     color: white;
     background-color: transparent;
     border: solid 2px white;
