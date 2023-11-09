@@ -189,33 +189,86 @@ h1{
 /*************
     Photo
 *************/
-    
+
+.photomain > h1{
+    color: black;
+    margin-top: 50px;
+}    
+
 .portrait-card{
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 50px;
 }
 
 .portrait-card > a > img{  
-    width: 500px;
+    width: 200px;
+    overflow: hidden;
     height: auto;
-    margin-left: 30%;
+    margin: 10px;
 }
 
-.portrait-card > h2{
+.portrait-card > a{
+    text-decoration: none;
+}
+
+.portrait-card > a > h2{
     position: flex;
     background-color: white;
-    height: 50px;
+    height: 25px;
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 250px;
-    font-size: 2em;
+    width: 150px;
+    font-size: 1em;
     font-family: 'lemonlight';
-    box-shadow: 4px 4px 10px black;
+    background-color: #768E98;
+    color: white;
+    margin: 0;
 }
 
 
+@media (min-width: 800px){
+    .photomain > h1{
+        color: black;
+        margin-top: 50px;
+    }    
+
+    .portrait-card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+    }
+
+    .portrait-card > a > img{  
+        width: 300px;
+        overflow: hidden;
+        height: auto;
+        margin: 50px;
+    }
+
+    .portrait-card > a{
+        text-decoration: none;
+    }
+
+    .portrait-card > a > h2{
+        position: flex;
+        background-color: white;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 250px;
+        font-size: 2em;
+        font-family: 'lemonlight';
+        background-color: #768E98;
+        color: white;
+        margin: 0;
+    }
+
+}
 
 /*************
 About Us
@@ -485,14 +538,15 @@ HEROPICTURE
 footer{
     margin-top: 0px;
     padding: 10px 15%;
+    padding-bottom: 50px;
     background-color: #768E98;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 80px;
-    height: 900px;
+    gap: 10px;
+    height: 800px;
 }
 
 footer > div{
