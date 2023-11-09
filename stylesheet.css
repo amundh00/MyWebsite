@@ -253,15 +253,25 @@ h1{
         overflow: hidden;
         height: auto;
         margin: 50px;
+        transition: transform 1s;
+    }
+
+    .portrait-card > a > img:hover{
+        transform: scale(1.1);
     }
 
     .portrait-card > a{
         text-decoration: none;
     }
 
+    .portrait-card > a > h2:hover{
+        background-color: white;
+        transform: scale(1.2);
+        color: #768E98;
+    }
+
     .portrait-card > a > h2{
         position: flex;
-        background-color: white;
         height: 50px;
         justify-content: center;
         align-items: center;
@@ -272,6 +282,7 @@ h1{
         background-color: #768E98;
         color: white;
         margin: 0;
+        transition: transform 1s;
     }
 
 }
@@ -583,6 +594,11 @@ HEROPICTURE
 /***************
    CONTACT ME
 ***************/
+
+.contact_main > h1{
+    margin-top: 50px;
+}
+
 .contact-container{
     display: flex;
     flex-direction: column;
@@ -697,7 +713,33 @@ HEROPICTURE
 }
 
 
+/****************
+     CODING
+****************/
 
+.github_link{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.github_link > p{
+    width: 500px;
+}
+
+.github_link > a{
+    text-decoration: none;
+    color: white;
+    background-color: #768E98;
+    padding: 10px;
+}
+
+.github_link > a:hover{
+    color: #768E98;
+    background-color: white;
+}
 
 
 
