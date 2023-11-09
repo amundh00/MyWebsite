@@ -36,7 +36,7 @@ body{
 }
 
 header{
-    background-color: #768E98;
+    background-color: white;
     height: 130px;
     margin-top: 0;
     padding-top: 10px;
@@ -101,21 +101,23 @@ h1{
 @media (min-width: 800px){
 
 header{
-    background-color: #768E98;
+    background-color: white;
     height: 90px;
     margin-top: 0;
     padding-top: 10px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
 header > a{
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 h1{
     margin-bottom: 5px;
     margin-top: 0;
-    color: white;
+    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -140,7 +142,7 @@ h1{
     border-radius: 10px;
     list-style: none;
     text-decoration: none;
-    color: white;
+    color: black;
     cursor: pointer;
     margin: 0;
     font-size: 1em;
@@ -150,9 +152,11 @@ h1{
 }
 
 .headernav > ul > li a:hover{
-    color: black;
-    background-color: white;
+    color: white;
+    background-color: black;
 }
+
+
 
 }
 
@@ -284,7 +288,13 @@ Photo Pages
     margin: 50px;
 }
 
-.portrait-container > img{
+.portrait-container > div{
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.portrait-container > div > img{
     width: 350px;
     height: auto;
     overflow: hidden;
@@ -300,6 +310,12 @@ Photo Pages
         margin: 50px;
     }
 
+    .portrait-container > div{
+        max-width: 500px;
+        max-height: 450px;
+        overflow: hidden;
+    }
+
     .portrait-container > img{
         width: 500px;
         height: auto;
@@ -308,8 +324,12 @@ Photo Pages
 
 }
 /*************
-About Us
+About Me
 *************/
+
+.about-main > h1{
+    margin-top: 50px;
+}
 
 hr{
     width: 70%;
@@ -317,8 +337,17 @@ hr{
     background-color: black;
 }
 
+.card-photo-container{
+    overflow: hidden;
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .card-right{
     display: flex;
+    flex-direction: column;
     align-items: center;
     margin: 100px;
 }
@@ -333,17 +362,16 @@ hr{
     line-height: 35px;
 }
 
-.card-right > img{
+.card-right > div > img{
     display: flex;
     width: 450px;
     height: auto;
     margin-left: 50px;
 } 
 
-/*Left*/
-
 .card-left{
     display: flex;
+    flex-direction: column;
     align-items: center;
     margin: 100px;
 }
@@ -358,13 +386,91 @@ hr{
     line-height: 35px;
 }
 
-.card-left > img{
+.card-left > div > img{
     display: flex;
-    width: 450px;
+    width: 350px;
     height: auto;
     margin-right: 50px;
 } 
 
+.card-container > div > div > p{
+    max-width: 300px;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+@media (min-width: 800px){
+
+    .card-photo-container{
+        overflow: hidden;
+        max-width: 500px;
+        max-height: 100%;
+    }
+
+    .card-right{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 100px;
+    }
+    
+    .card-right > div > h2{
+        text-align: center;
+        font-size: 2em;
+    }
+    
+    .card-right > div > p{
+        font-size: 1.2em;
+        line-height: 35px;
+    }
+    
+    .card-right > div > img{
+        width: 450px;
+        height: auto;
+        margin-left: 50px;
+    } 
+
+    .card-left{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 100px;
+    }
+
+    .card-left > div > h2{
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .card-left > div > p{
+        font-size: 1.2em;
+        line-height: 35px;
+    }
+
+    .card-left > div > img{
+        width: 450px;
+        height: auto;
+        margin-right: 50px;
+    } 
+
+    .card-container > div > div > p{
+        max-width: 800px;
+    }
+
+    .card-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
 /************
 HEROPICTURE
 ************/
@@ -433,7 +539,7 @@ HEROPICTURE
     .heropicture > p{
         position: absolute;
         top: 30%;
-        left: 30%;
+        left: 25%;
         transform: translate(-50%, -50%);
         color: white;
         width: 700px;
@@ -459,7 +565,7 @@ HEROPICTURE
         flex-direction: row;
         position: absolute;
         top: 50%;
-        left: 30%;
+        left: 25%;
         transform: translate(-50%, -50%);
         gap: 150px;
     }
