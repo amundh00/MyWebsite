@@ -578,7 +578,7 @@ HEROPICTURE
         top: 50%;
         left: 25%;
         transform: translate(-50%, -50%);
-        gap: 150px;
+        gap: 50px;
     }
 
     .socials > a{
@@ -588,6 +588,12 @@ HEROPICTURE
 
     .socials > a:hover{
         color: #10596A;
+        transform: scale(1.2);
+        
+    }
+
+    .socials > a:hover{
+        transition: transform 0.5s;
     }
 
 }
