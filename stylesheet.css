@@ -22,6 +22,7 @@ main{
     margin: 0 0 0 0;
 }
 
+
 /*********
 Header
 **********/
@@ -485,119 +486,38 @@ hr{
 /************
 HEROPICTURE
 ************/
-.desktophero{
-    display: none;
+
+main{
+    height: 1000px;
 }
 
-.heropicture > p{
+.h-one{
     position: absolute;
-    top: 15%;
+    color: white;
+    font-size: 100px;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
-    width: 300px;
-    background-color: rgba(118, 142, 152, 0.7);
-    padding: 20px;
-    border-radius: 20px;
+    white-space: nowrap;
+    transition: 0.5s ease-in-out;
 }
 
-.phonehero{
-    display: flex;   
+.h-one:hover{
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    cursor: pointer;
 }
 
-.heropicture{
-    display: flex;
-    text-align: center;
-    position: relative;
-    margin: 0;
+.background-video{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
     width: 100%;
-    height: 100%;
-    overflow: hidden;
-    object-fit: cover;
+    height: auto;
 }
 
-.socials{
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    gap: 50px;
-    background-color: rgba(118, 142, 152, 0.7);
-    padding: 20px;
-    border-radius: 20px;
-}
 
-.socials > a{
-    font-size: 3em;
-    color: white;
-}
-
-.socials > a:hover{
-    color: #10596A;
-}
-
-@media (min-width: 800px){
-    .desktophero{
-        display: flex;
-        width: 100%;
-    }
-
-    .phonehero{
-        display: none;
-    }
-
-    .heropicture > p{
-        position: absolute;
-        top: 30%;
-        left: 25%;
-        transform: translate(-50%, -50%);
-        color: white;
-        width: 700px;
-        background-color: #768E98;
-        background-color: rgba(118, 142, 152, 0.7);
-        padding: 20px;
-        font-size: 1.3em;
-    }
-
-    .heropicture{
-        display: flex;
-        text-align: center;
-        position: relative;
-        margin: 0;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        object-fit: cover;
-    }
-
-    .socials{
-        display: flex;
-        flex-direction: row;
-        position: absolute;
-        top: 50%;
-        left: 25%;
-        transform: translate(-50%, -50%);
-        gap: 50px;
-    }
-
-    .socials > a{
-        font-size: 4em;
-        color: white;
-    }
-
-    .socials > a:hover{
-        color: #10596A;
-        transform: scale(1.2);
-        
-    }
-
-    .socials > a:hover{
-        transition: transform 0.5s;
-    }
-
-}
 /***************
    CONTACT ME
 ***************/
