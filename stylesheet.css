@@ -541,6 +541,7 @@ HEROPICTURE
 @media (min-width: 800px){
     .desktophero{
         display: flex;
+        width: 100%;
     }
 
     .phonehero{
