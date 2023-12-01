@@ -503,7 +503,7 @@ main{
 }
 
 .h-one:hover{
-    -webkit-text-stroke: 1px #fff;
+    -webkit-text-stroke: 0.01px #fff;
     color: transparent;
     cursor: pointer;
 }
