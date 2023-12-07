@@ -175,12 +175,7 @@ h1{
 
 }
 
-@media (min-width: 800px){
-    .yt-container{
-        display: grid;
-        grid-template-columns: auto auto;
-    }
-}
+
 
 /************
 3D & VFX
@@ -236,58 +231,6 @@ h1{
 }
 
 
-@media (min-width: 800px){
-    .photomain > h1{
-        color: black;
-        margin-top: 50px;
-    }    
-
-    .portrait-card{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 50px;
-    }
-
-    .portrait-card > a > img{  
-        width: 500px;
-        overflow: hidden;
-        height: auto;
-        margin: 50px;
-        transition: transform 1s;
-    }
-
-    .portrait-card > a > img:hover{
-        transform: scale(1.1);
-    }
-
-    .portrait-card > a{
-        text-decoration: none;
-    }
-
-    .portrait-card > a > h2:hover{
-        background-color: white;
-        transform: scale(1.2);
-        color: #768E98;
-    }
-
-    .portrait-card > a > h2{
-        position: flex;
-        height: 50px;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        width: 250px;
-        font-size: 2em;
-        font-family: 'lemonlight';
-        background-color: #768E98;
-        color: white;
-        margin: 0;
-        transition: transform 1s;
-    }
-
-}
-
 /***************
 Photo Pages
 ***************/
@@ -310,30 +253,6 @@ Photo Pages
     width: 350px;
     height: auto;
     overflow: hidden;
-}
-
-@media (min-width: 800px){
-
-    .portrait-container{
-        display: grid;
-        grid-template-columns: auto auto auto;
-        justify-content: center;
-        gap: 10px;
-        margin: 50px;
-    }
-
-    .portrait-container > div{
-        max-width: 500px;
-        max-height: 450px;
-        overflow: hidden;
-    }
-
-    .portrait-container > img{
-        width: 500px;
-        height: auto;
-        overflow: hidden;
-    }
-
 }
 /*************
 About Me
@@ -415,73 +334,6 @@ hr{
     align-items: center;
     justify-content: center;
     text-align: center;
-}
-
-
-@media (min-width: 800px){
-
-    .card-photo-container{
-        overflow: hidden;
-        max-width: 500px;
-        max-height: 100%;
-    }
-
-    .card-right{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin: 100px;
-    }
-    
-    .card-right > div > h2{
-        text-align: center;
-        font-size: 2em;
-    }
-    
-    .card-right > div > p{
-        font-size: 1.2em;
-        line-height: 35px;
-    }
-    
-    .card-right > div > img{
-        width: 450px;
-        height: auto;
-        margin-left: 50px;
-    } 
-
-    .card-left{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin: 100px;
-    }
-
-    .card-left > div > h2{
-        text-align: center;
-        font-size: 2em;
-    }
-
-    .card-left > div > p{
-        font-size: 1.2em;
-        line-height: 35px;
-    }
-
-    .card-left > div > img{
-        width: 450px;
-        height: auto;
-        margin-right: 50px;
-    } 
-
-    .card-container > div > div > p{
-        max-width: 800px;
-    }
-
-    .card-container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
 }
 /************
 HEROPICTURE
@@ -589,54 +441,6 @@ main{
     border: none;
     text-align: center;
     
-}
-
-@media (min-width: 800px){
-    .contact-container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 200px;
-        flex-direction: row;
-    }
-
-    .contact-sheet > input{
-        width: 550px;
-        height: 25px;
-    }
-    
-    .contact-sheet > textarea{
-        margin: 10px 50px 0 50px;
-        width: 550px;
-    }
-    
-    .contact-sheet > button{
-        width: 300px;
-        height: 50px;
-        font-size: 20px;
-    }
-
-    .contact-text{
-        width: 500px;
-    }
-    
-    .contact-text > hr{
-        height: 1px;
-        border: none;
-        width: 100%;
-    }
-    
-    .contact-text > h2{
-        font-size: 25px;
-    }
-
-    .contact-text > p{
-        font-size: 20px;
-    }
-
-    .contact-container{
-        margin: 50px;
-    }
 }
 
 
@@ -752,6 +556,210 @@ footer form button:hover{
 
 
 @media (min-width: 576px){
+
+/*************
+   FILM PAGE
+*************/
+
+.yt-container{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+/*************
+    photo 
+*************/
+
+.photomain > h1{
+    color: black;
+    margin-top: 50px;
+}    
+
+.portrait-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.portrait-card > a > img{  
+    width: 500px;
+    overflow: hidden;
+    height: auto;
+    margin: 50px;
+    transition: transform 1s;
+}
+
+.portrait-card > a > img:hover{
+    transform: scale(1.1);
+}
+
+.portrait-card > a{
+    text-decoration: none;
+}
+
+.portrait-card > a > h2:hover{
+    background-color: white;
+    transform: scale(1.2);
+    color: #768E98;
+}
+
+.portrait-card > a > h2{
+    position: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 250px;
+    font-size: 2em;
+    font-family: 'lemonlight';
+    background-color: #768E98;
+    color: white;
+    margin: 0;
+    transition: transform 1s;
+}
+
+.portrait-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 10px;
+    margin: 50px;
+}
+
+.portrait-container > div{
+    max-width: 500px;
+    max-height: 450px;
+    overflow: hidden;
+}
+
+.portrait-container > img{
+    width: 500px;
+    height: auto;
+    overflow: hidden;
+}
+
+
+
+/***********
+About me cards
+***********/
+
+.card-photo-container{
+    overflow: hidden;
+    max-width: 500px;
+    max-height: 100%;
+}
+
+.card-right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 100px;
+}
+
+.card-right > div > h2{
+    text-align: center;
+    font-size: 2em;
+}
+
+.card-right > div > p{
+    font-size: 1.2em;
+    line-height: 35px;
+}
+
+.card-right > div > img{
+    width: 450px;
+    height: auto;
+    margin-left: 50px;
+} 
+
+.card-left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 100px;
+}
+
+.card-left > div > h2{
+    text-align: center;
+    font-size: 2em;
+}
+
+.card-left > div > p{
+    font-size: 1.2em;
+    line-height: 35px;
+}
+
+.card-left > div > img{
+    width: 450px;
+    height: auto;
+    margin-right: 50px;
+} 
+
+.card-container > div > div > p{
+    max-width: 800px;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*************
+Contact sheet
+*************/
+.contact-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    flex-direction: row;
+}
+
+.contact-sheet > input{
+    width: 550px;
+    height: 25px;
+}
+    
+.contact-sheet > textarea{
+    margin: 10px 50px 0 50px;
+    width: 550px;
+}
+    
+.contact-sheet > button{
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+}
+
+.contact-text{
+    width: 500px;
+}
+    
+.contact-text > hr{
+    height: 1px;
+    border: none;
+    width: 100%;
+}
+    
+.contact-text > h2{
+    font-size: 25px;
+}
+
+.contact-text > p{
+    font-size: 20px;
+}
+
+.contact-container{
+    margin: 50px;
+}
+
+/*************
+    FOOTER
+*************/
 
 footer{
     margin-top: 0px;
