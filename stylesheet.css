@@ -38,7 +38,7 @@ body{
 
 header{
     background-color: white;
-    height: 130px;
+    height: 0;
     margin-top: 0;
     padding-top: 10px;
     padding-bottom: 15px;
@@ -97,68 +97,73 @@ h1{
     display: none;
 }
 
+/***********
+   INDEX
+***********/
 
-
-@media (min-width: 800px){
-
-header{
-    background-color: white;
-    height: 90px;
-    margin-top: 0;
-    padding-top: 10px;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+#hero-phone{
+    display: block;
 }
 
-header > a{
-    text-decoration: none;
-    color: black;
-}
-
-h1{
-    margin-bottom: 5px;
-    margin-top: 0;
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.headernav > ul{
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
-    justify-content: center;
-    margin: 0;
-    padding: o;
-    list-style: none;
-    padding: 0;
-}
-
-.headernav > ul > li{
-    margin: 0 20px;
-}
-
-.headernav > ul > li > a{
-    text-align: center;
-    border-radius: 10px;
-    list-style: none;
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
-    margin: 0;
-    font-size: 1em;
-    padding: 5px;
-    width: 100px;
-    background-color: transparent;
-}
-
-.headernav > ul > li a:hover{
+.h-one{
+    position: absolute;
     color: white;
-    background-color: black;
+    font-size: 100px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    transition: 0.5s ease-in-out;
+}
+
+.h-one:hover{
+    -webkit-text-stroke: 0.01px #fff;
+    color: transparent;
+    cursor: pointer;
+}
+
+.index-nav{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.index-nav > ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.index-nav > ul > li{
+    padding: 5px;
+    text-align: center;
+}
+
+.index-nav > ul > li > a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+/************
+HEROPICTURE
+************/
+
+main{
+    height: 1000px;
 }
 
 
 
+.background-video{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: auto;
 }
 
 /*************** 
@@ -335,39 +340,7 @@ hr{
     justify-content: center;
     text-align: center;
 }
-/************
-HEROPICTURE
-************/
 
-main{
-    height: 1000px;
-}
-
-.h-one{
-    position: absolute;
-    color: white;
-    font-size: 100px;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    white-space: nowrap;
-    transition: 0.5s ease-in-out;
-}
-
-.h-one:hover{
-    -webkit-text-stroke: 0.01px #fff;
-    color: transparent;
-    cursor: pointer;
-}
-
-.background-video{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    height: auto;
-}
 
 
 /***************
@@ -555,7 +528,119 @@ footer form button:hover{
 }
 
 
-@media (min-width: 576px){
+@media (min-width: 800px){
+
+/**********
+  HEADER
+**********/
+
+header{
+    background-color: white;
+    height: 90px;
+    margin-top: 0;
+    padding-top: 10px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+    
+header > a{
+    text-decoration: none;
+    color: black;
+}
+    
+h1{
+    margin-bottom: 5px;
+    margin-top: 0;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+.headernav > ul{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    justify-content: center;
+    margin: 0;
+    padding: o;
+    list-style: none;
+    padding: 0;
+}
+    
+.headernav > ul > li{
+    margin: 0 20px;
+}
+    
+.headernav > ul > li > a{
+    text-align: center;
+    border-radius: 10px;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    margin: 0;
+    font-size: 1em;
+    padding: 5px;
+    width: 100px;
+    background-color: transparent;
+}
+    
+.headernav > ul > li a:hover{
+    color: white;
+    background-color: black;
+} 
+
+/*************
+   Index
+*************/
+
+#hero-phone{
+    display: none;
+}
+
+.h-one{
+    position: absolute;
+    color: white;
+    font-size: 100px;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    transition: 0.5s ease-in-out;
+}
+
+.background-video{
+    display: block;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+}
+
+.index-nav{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.index-nav > ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.index-nav > ul > li > a{
+    padding: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+.index-nav > ul > li > a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
 
 /*************
    FILM PAGE
