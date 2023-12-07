@@ -16,7 +16,7 @@ h1,h2,h3{
     font-family: 'lemonregular',Arial, Helvetica, sans-serif;
 }
 
-p{font-family: 'lemonlight', Arial, Helvetica, sans-serif;}
+p{font-family: Arial, Helvetica, sans-serif;}
 
 main{
     margin: 0 0 0 0;
@@ -150,12 +150,6 @@ h1{
 HEROPICTURE
 ************/
 
-main{
-    height: 1000px;
-}
-
-
-
 .background-video{
     display: none;
     position: absolute;
@@ -166,32 +160,14 @@ main{
     height: auto;
 }
 
-/*************** 
-   Film Page
-***************/
+/*************
+    KONTAKT
+*************/
 
-.yt-container{
-    display: grid;
-    grid-template-columns: auto;
-    justify-content: center; 
-    width: 100%;
-    gap: 50px;
-    margin: 50px 0 50px 0;
-
+.contact_main{
+    height: 500px;
 }
 
-
-
-/************
-3D & VFX
-************/
-
-.sketchfab-embed-wrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
 /*************
     Photo
@@ -259,6 +235,7 @@ Photo Pages
     height: auto;
     overflow: hidden;
 }
+
 /*************
 About Me
 *************/
@@ -341,109 +318,17 @@ hr{
     text-align: center;
 }
 
-
-
 /***************
    CONTACT ME
 ***************/
 
-.contact_main > h1{
-    margin-top: 50px;
-}
-
-.contact-container{
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-container > hr{
-    border: none;
-    width: 300px;
-    height: 2px;
-}
-
-.contact-text{
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    text-align: center;
-    flex-direction: column;
-    width: 300px;
-}
-
-.contact-text > hr{
-    height: 1px;
-    border: none;
-    width: 100%;
-}
-
-.contact-text > h2{
-    font-size: 15px;
-}
-
-.contact-sheet{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.contact-sheet > input{
-    border: solid 2px black;
-    margin: 10px 50px 0 50px;
-    width: 350px;
-    height: 25px;
-    text-align: center;
-}
-
-.contact-sheet > textarea{
-    border: solid 2px black;
-    margin: 10px 50px 0 50px;
-    width: 350px;
-    text-align: left;
-}
-
-.contact-sheet > button{
-    width: 300px;
-    height: 50px;
-    font-size: 20px;
-    margin: 10px;
-    border-radius: 20px;
-    background-color: #768E98;
-    color: white;
-    border: none;
-    text-align: center;
-    
-}
 
 
 /****************
      CODING
 ****************/
 
-.github_link{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 50px;
-}
 
-.github_link > p{
-    width: 500px;
-}
-
-.github_link > a{
-    text-decoration: none;
-    color: white;
-    background-color: #768E98;
-    padding: 10px;
-}
-
-.github_link > a:hover{
-    color: #768E98;
-    background-color: white;
-}
 
 
 
@@ -482,44 +367,6 @@ footer > div > h2{
     color: white;
     background-color: transparent;
     margin-bottom: 10px;
-}
-
-footer form input{
-    width: 350px;
-    height: 20px;
-    text-align: center;
-    margin: 20px 0 20px 0;
-    outline: none;
-    color: white;
-    background-color: transparent;
-    border: 2px solid white;
-}
-
-footer form textarea{
-    width: 350px;
-    height: 50px;
-    text-align: left;
-    margin: 5px 0 5px 0;
-    outline: none;
-    color: white;
-    background-color: #768E98;
-    border: 2px solid white;
-}
-
-footer form button{
-    background: transparent;
-    border: 2px solid #fff;
-    color: #fff;
-    padding: 10px 30px;
-    font-size: 15px;
-    width: 355px;
-    height: 40px;
-}
-
-footer form button:hover{
-    background: transparent;
-    color: black;
-    border: 2px solid black;
 }
 
 .col-1 a:hover{
@@ -646,10 +493,7 @@ h1{
    FILM PAGE
 *************/
 
-.yt-container{
-    display: grid;
-    grid-template-columns: auto auto;
-}
+
 
 /*************
     photo 
@@ -792,56 +636,6 @@ About me cards
     align-items: center;
 }
 
-
-/*************
-Contact sheet
-*************/
-.contact-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 200px;
-    flex-direction: row;
-}
-
-.contact-sheet > input{
-    width: 550px;
-    height: 25px;
-}
-    
-.contact-sheet > textarea{
-    margin: 10px 50px 0 50px;
-    width: 550px;
-}
-    
-.contact-sheet > button{
-    width: 300px;
-    height: 50px;
-    font-size: 20px;
-}
-
-.contact-text{
-    width: 500px;
-}
-    
-.contact-text > hr{
-    height: 1px;
-    border: none;
-    width: 100%;
-}
-    
-.contact-text > h2{
-    font-size: 25px;
-}
-
-.contact-text > p{
-    font-size: 20px;
-}
-
-.contact-container{
-    margin: 50px;
-}
-
 /*************
     FOOTER
 *************/
@@ -876,43 +670,6 @@ footer > div > h2{
     color: white;
     background-color: transparent;
     margin-bottom: 10px;
-}
-
-footer form input{
-    width: 350px;
-    height: 30px;
-    text-align: center;
-    margin: 20px 0 10px 0;
-    outline: 2px white;
-    background-color: transparent;
-    border: solid 2px white;
-    color: white;
-}
-
-footer form textarea{
-    width: 350px;
-    height: 60px;
-    text-align: left;
-    margin: 5px 0 5px 0;
-    color: white;
-    background-color: transparent;
-    border: solid 2px white;
-}
-
-footer form button{
-    background: transparent;
-    border: 2px solid white;
-    color: white;
-    padding: 10px 30px;
-    font-size: 15px;
-    width: 355px;
-    height: 40px;
-}
-
-footer form button:hover{
-    background: transparent;
-    color: black;
-    border: 2px solid black;
 }
 
 .col-1 a:hover{
