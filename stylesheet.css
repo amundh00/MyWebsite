@@ -14,88 +14,147 @@
 
 h1,h2,h3{
     font-family: 'lemonregular',Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-p{font-family: Arial, Helvetica, sans-serif;}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
 main{
     margin: 0 0 0 0;
 }
 
-
-/*********
-Header
-**********/
+li{
+    font-family: 'lemonregular',Arial, Helvetica, sans-serif;
+}
 
 body{
-    font-family: 'lemonregular', Arial, Helvetica, sans-serif;
-    min-height: 100vh;
-
     margin: 0;
-    padding: 0;
-    margin-top: 0;
 }
+
+
+/**************
+    HEADER
+**************/
 
 header{
-    background-color: white;
-    height: 0;
-    margin-top: 0;
-    padding-top: 10px;
-    padding-bottom: 15px;
+    background: white;
 }
 
-header > a{
-    text-decoration: none;
-    color: black;
-}
-
-h1{
-    margin-bottom: 5px;
-    margin-top: 0;
-    color: black;
+.header-container{
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 100%;
+}
+
+.header-container > div{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.headernav > ul{
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto;
-    justify-content: center;
-    text-align: center;
-    margin: 0;
-    padding: o;
-    list-style: none;
-    padding: 0;
-}
-
-.headernav > ul > li{
-    margin: 0 20px;
-}
-
-.headernav > ul > li > a{
-    text-align: center;
-    border-radius: 10px;
-    list-style: none;
+.header-container > div > a{
     text-decoration: none;
     color: black;
-    cursor: pointer;
+    
+}
+
+.header-container > div > a > img{
+    width: 50px;
+    height: auto;
+}
+
+.header-container > div > a > div > p{
+    padding: 0;
     margin: 0;
-    font-size: 1.2em;
-    padding: 5px;
-    width: 100px;
-    background-color: transparent;
 }
 
-.headernav > ul > li a:hover{
+.header-container > a > div > h1{
+    padding: 0;
+    margin: 0;
+}
+
+/*
+HAMBURGER MENU
+*/
+
+.fa-bars{
     color: black;
-    background-color: white;
 }
 
-.heropicture{
+.menu-container{
+    margin-left: 50px;
+}
+
+nav{
     display: none;
 }
+
+input#hamburger-menu {
+    display: none;
+}
+
+input#hamburger-menu:checked ~ nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    margin-top: 50px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+}
+
+label[for=hamburger-menu] {
+    display: inline-block;
+    width: 100%;
+    margin: 16px 0;
+    font-size: 2em;
+    text-align: right;
+}
+
+nav > ul > li > a:hover{
+    color:  black;
+}
+ 
+nav > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+nav > ul > li{
+    width: 100%;
+    text-align: center;
+}
+
+nav > ul > li > a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 4px 10px;
+    color: black;
+    text-align: center;
+    margin: 3px 0;
+    font-size: 20px;
+    font-size: 30px;
+    
+}
+
+
 
 /***********
    INDEX
@@ -172,11 +231,15 @@ HEROPICTURE
 /*************
     Photo
 *************/
-
-.photomain > h1{
-    color: black;
+.photomain{
     margin-top: 50px;
-}    
+}
+
+.photomain > h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .portrait-card{
     display: flex;
@@ -378,64 +441,88 @@ footer > div > h2{
 @media (min-width: 800px){
 
 /**********
-  HEADER
+HEADER 800px
 **********/
+    header{
+        background: white;
+    }
 
-header{
-    background-color: white;
-    height: 90px;
-    margin-top: 0;
-    padding-top: 10px;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
+    .header-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 150px;
+    }
     
-header > a{
-    text-decoration: none;
-    color: black;
-}
+    .header-container > div{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
     
-h1{
-    margin-bottom: 5px;
-    margin-top: 0;
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    .header-container > div > a{
+        text-decoration: none;
+    }
     
-.headernav > ul{
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
-    justify-content: center;
-    margin: 0;
-    padding: o;
-    list-style: none;
-    padding: 0;
-}
+    .header-container > div > a > img{
+        width: 80px;
+        height: auto;
+        transition: transform 0.5s;
+    }
+
+    .header-container > div > a > img:hover{
+        transform: scale(1.1);
+    }
     
-.headernav > ul > li{
-    margin: 0 20px;
-}
+    .header-container > div > a > div > p{
+        padding: 0;
+        margin: 0;
+    }
     
-.headernav > ul > li > a{
-    text-align: center;
-    border-radius: 10px;
-    list-style: none;
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
-    margin: 0;
-    font-size: 1em;
-    padding: 5px;
-    width: 100px;
-    background-color: transparent;
-}
-    
-.headernav > ul > li a:hover{
-    color: white;
-    background-color: black;
-} 
+    .header-container > a > div > h1{
+        padding: 0;
+        margin: 0;
+    }
+
+    label[for=hamburger-menu] {
+        display: none;
+    }
+
+    nav{
+        margin-top: 0;
+        display: block;
+    }
+
+    nav > ul{
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        height: 64px;
+
+    }
+
+    nav > ul > li > a{
+        width: 100px; 
+        margin: 0 0 0 20px;
+        font-size: 20px;
+        transition: transform 0.3s ease;
+    }
+
+    nav > ul > li > a:hover{
+        text-decoration: underline;
+    }
+
+    #menu-container{
+        justify-content: right;
+    }
+
+    #logo-container{
+        justify-content: left;
+    }
+
 
 /*************
    Index
@@ -480,11 +567,13 @@ h1{
 }
 
 .index-nav > ul > li > a{
+    color: white;
     padding: 20px;
     transition: 0.5s ease-in-out;
 }
 
 .index-nav > ul > li > a:hover{
+    color: white;
     cursor: pointer;
     text-decoration: underline;
 }
