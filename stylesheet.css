@@ -339,10 +339,13 @@ hr{
 
 .card-photo-container{
     overflow: hidden;
-    max-height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 300px;
+    height: 300px;
+    margin: 10px 0 10px 0;
+    border-radius: 5px;
 }
 
 .card-right{
@@ -364,9 +367,16 @@ hr{
 
 .card-right > div > img{
     display: flex;
-    width: 450px;
+    width: 400px;
     height: auto;
     margin-left: 50px;
+} 
+
+.card-left > div > img{
+    display: flex;
+    width: 400px;
+    height: auto;
+    margin-right: 50px;
 } 
 
 .card-left{
@@ -385,13 +395,6 @@ hr{
     font-size: 1.2em;
     line-height: 35px;
 }
-
-.card-left > div > img{
-    display: flex;
-    width: 350px;
-    height: auto;
-    margin-right: 50px;
-} 
 
 .card-container > div > div > p{
     max-width: 300px;
@@ -688,8 +691,8 @@ About me cards
 
 .card-photo-container{
     overflow: hidden;
-    max-width: 500px;
-    max-height: 100%;
+    width: 400px;
+    height: 400px;
 }
 
 .card-right{
@@ -697,6 +700,7 @@ About me cards
     flex-direction: row;
     align-items: center;
     margin: 100px;
+    width: 900px;
 }
 
 .card-right > div > h2{
@@ -709,17 +713,12 @@ About me cards
     line-height: 35px;
 }
 
-.card-right > div > img{
-    width: 450px;
-    height: auto;
-    margin-left: 50px;
-} 
-
 .card-left{
     display: flex;
     flex-direction: row;
     align-items: center;
     margin: 100px;
+    width: 900px;
 }
 
 .card-left > div > h2{
@@ -732,8 +731,16 @@ About me cards
     line-height: 35px;
 }
 
+.card-right > div > img{
+    display: flex;
+    width: 400px;
+    height: auto;
+    margin-left: 50px;
+} 
+
 .card-left > div > img{
-    width: 450px;
+    display: flex;
+    width: 400px;
     height: auto;
     margin-right: 50px;
 } 
