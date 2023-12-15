@@ -180,25 +180,14 @@ nav > ul > li > a {
    INDEX
 ***********/
 
-#hero-phone{
-    display: block;
-}
-
 .h-one{
     position: absolute;
     color: white;
-    font-size: 100px;
-    top: 40%;
+    font-size: 50px;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     white-space: nowrap;
-    transition: 0.5s ease-in-out;
-}
-
-.h-one:hover{
-    -webkit-text-stroke: 0.01px #fff;
-    color: transparent;
-    cursor: pointer;
 }
 
 .index-nav{
@@ -232,13 +221,14 @@ HEROPICTURE
 
 .background-video{
     display: none;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    height: auto;
 }
+
+main{
+    height: 1000px;
+    background-color: #10596A;
+}
+
+
 
 /*************
     KONTAKT
@@ -252,6 +242,7 @@ HEROPICTURE
 /*************
     Photo
 *************/
+
 .photomain{
     margin-top: 50px;
 }
@@ -554,9 +545,7 @@ HEADER 800px
    Index
 *************/
 
-#hero-phone{
-    display: none;
-}
+
 
 .h-one{
     position: absolute;
@@ -567,6 +556,12 @@ HEADER 800px
     transform: translate(-50%, -50%);
     white-space: nowrap;
     transition: 0.5s ease-in-out;
+}
+
+.h-one:hover{
+    -webkit-text-stroke: 0.01px #fff;
+    color: transparent;
+    cursor: pointer;
 }
 
 .background-video{
