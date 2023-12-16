@@ -52,21 +52,21 @@ body, html {
 *****************/
 
 .h-one{
-    position: absolute;
     color: white;
     font-size: 50px;
-    top: 150px;
-    left: 50%;
     text-align: center;
-    transform: translate(-50%, -50%);
     white-space: wrap;
 }
 
 .index-nav{
-    position: absolute;
-    top: 350px;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    
+}
+
+#index-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .index-nav > ul{
@@ -120,12 +120,9 @@ HEROPICTURE
 }
 
 .h-one{
-    position: absolute;
     color: white;
-    font-size: 100px;
-    top: 600px;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    font-size: 70px;
+    height: 70px;
     white-space: nowrap;
     transition: 0.5s ease-in-out;
 }
@@ -147,24 +144,34 @@ HEROPICTURE
 }
 
 .index-nav{
-    position: absolute;
-    top: 670px;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    
 }
+
+#index-text{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .index-nav > ul{
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width: 1200px;
+    width: 600px;
 }
 
 .index-nav > ul > li > a{
     color: white;
     padding: 20px;
     transition: 0.5s ease-in-out;
+    white-space: nowrap;
 }
 
 .index-nav > ul > li > a:hover{
