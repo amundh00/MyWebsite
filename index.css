@@ -1,0 +1,174 @@
+@font-face {
+    font-family: lemonregular;
+    src: url(fonts/LEMONMILK-Regular.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: lemonlight;
+    src: url(fonts/LEMONMILK-Light.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1,h2,h3{
+    font-family: 'lemonregular',Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 40px; 
+}
+
+h2, h3{
+    font-size: 25px;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+
+    margin: 0 0 0 0;
+}
+
+li{
+    font-family: 'lemonregular',Arial, Helvetica, sans-serif;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+/*****************
+      Index
+*****************/
+
+.h-one{
+    position: absolute;
+    color: white;
+    font-size: 50px;
+    top: 150px;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    white-space: wrap;
+}
+
+.index-nav{
+    position: absolute;
+    top: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.index-nav > ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.index-nav > ul > li{
+    padding: 5px;
+    text-align: center;
+}
+
+.index-nav > ul > li > a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    
+}
+
+/************
+HEROPICTURE
+************/
+
+.background-video{
+    display: none;
+}
+
+#phone-bg{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+#phone-bg > img{
+    overflow: hidden;
+    display: flex;
+    z-index: -1;
+    width: auto;
+    height: 900px;
+}
+
+@media (min-width: 800px){
+    /*************
+   Index
+*************/
+
+#phone-bg{
+    display: none;
+}
+
+.h-one{
+    position: absolute;
+    color: white;
+    font-size: 100px;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    transition: 0.5s ease-in-out;
+}
+
+.h-one:hover{
+    -webkit-text-stroke: 0.01px #fff;
+    color: transparent;
+    cursor: pointer;
+}
+
+.background-video{
+    display: block;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+}
+
+.index-nav{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.index-nav > ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.index-nav > ul > li > a{
+    color: white;
+    padding: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+.index-nav > ul > li > a:hover{
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+}

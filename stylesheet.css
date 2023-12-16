@@ -175,46 +175,6 @@ nav > ul > li > a {
     justify-content: center;
 }
 
-
-/***********
-   INDEX
-***********/
-
-.h-one{
-    position: absolute;
-    color: white;
-    font-size: 50px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    white-space: nowrap;
-}
-
-.index-nav{
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.index-nav > ul{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-}
-
-.index-nav > ul > li{
-    padding: 5px;
-    text-align: center;
-}
-
-.index-nav > ul > li > a{
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    
-}
-
 /************
 HEROPICTURE
 ************/
@@ -533,64 +493,6 @@ HEADER 800px
         justify-content: left;
     }
 
-
-/*************
-   Index
-*************/
-
-
-
-.h-one{
-    position: absolute;
-    color: white;
-    font-size: 100px;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    white-space: nowrap;
-    transition: 0.5s ease-in-out;
-}
-
-.h-one:hover{
-    -webkit-text-stroke: 0.01px #fff;
-    color: transparent;
-    cursor: pointer;
-}
-
-.background-video{
-    display: block;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    z-index: -1;
-    width: 100%;
-    height: auto;
-}
-
-.index-nav{
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.index-nav > ul{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-}
-
-.index-nav > ul > li > a{
-    color: white;
-    padding: 20px;
-    transition: 0.5s ease-in-out;
-}
-
-.index-nav > ul > li > a:hover{
-    color: white;
-    cursor: pointer;
-    text-decoration: underline;
-}
 
 /*************
    FILM PAGE
