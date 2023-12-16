@@ -123,7 +123,7 @@ HEROPICTURE
     position: absolute;
     color: white;
     font-size: 100px;
-    top: 45%;
+    top: 550px;
     left: 50%;
     transform: translate(-50%, -50%);
     white-space: nowrap;
@@ -148,7 +148,7 @@ HEROPICTURE
 
 .index-nav{
     position: absolute;
-    top: 55%;
+    top: 620px;
     left: 50%;
     transform: translate(-50%, -50%);
 }
