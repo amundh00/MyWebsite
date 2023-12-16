@@ -123,8 +123,8 @@ HEROPICTURE
     position: absolute;
     color: white;
     font-size: 100px;
+    top: 600px;
     left: 50%;
-    top: 550px;
     transform: translate(-50%, -50%);
     white-space: nowrap;
     transition: 0.5s ease-in-out;
@@ -148,7 +148,7 @@ HEROPICTURE
 
 .index-nav{
     position: absolute;
-    top: 620px;
+    top: 670px;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -157,6 +157,8 @@ HEROPICTURE
     list-style: none;
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+    width: 1200px;
 }
 
 .index-nav > ul > li > a{
