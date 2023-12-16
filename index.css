@@ -123,8 +123,8 @@ HEROPICTURE
     position: absolute;
     color: white;
     font-size: 100px;
-    top: 550px;
     left: 50%;
+    top: 550px;
     transform: translate(-50%, -50%);
     white-space: nowrap;
     transition: 0.5s ease-in-out;
