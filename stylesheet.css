@@ -199,7 +199,7 @@ HEROPICTURE
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 800px;
+    width: 80%;
     text-align: center;
     margin: 50px 0 0 0;
 }
@@ -662,6 +662,24 @@ About me cards
     flex-direction: column;
     align-items: center;
 }
+
+/************
+Kontakt meg
+************/
+
+#contacttext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+    text-align: center;
+    margin: 50px 0 0 0;
+}
+
+#contacttext > p{
+    margin: 20px 0 20px 0;
+}
+
 
 /*************
     FOOTER
