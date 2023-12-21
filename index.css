@@ -58,10 +58,6 @@ body, html {
     white-space: wrap;
 }
 
-.index-nav{
-    
-}
-
 #index-text{
     display: flex;
     flex-direction: column;
@@ -128,7 +124,7 @@ HEROPICTURE
 }
 
 .h-one:hover{
-    -webkit-text-stroke: 0.01px #fff;
+    -webkit-text-stroke: 1px #fff;
     color: transparent;
     cursor: pointer;
 }
@@ -141,10 +137,6 @@ HEROPICTURE
     z-index: -1;
     width: 100%;
     height: auto;
-}
-
-.index-nav{
-    
 }
 
 #index-text{
