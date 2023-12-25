@@ -34,7 +34,7 @@ p{
 }
 
 main{
-    margin: 0 0 0 0;
+    margin: 50px 0 0 0;
 }
 
 li{
@@ -213,10 +213,6 @@ HEROPICTURE
     Photo
 *************/
 
-.photomain{
-    margin-top: 50px;
-}
-
 .photomain > h2{
     display: flex;
     justify-content: center;
@@ -386,22 +382,29 @@ hr{
      Film Page
 ****************/
 
+#film-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #film-container{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    justify-content: center;
+    align-items: center;
 }
 
 .yt-container{
-    width: 300px;
-    height: auto;
+    
 }
 
 .yt-video > iframe{
-    width: 560px;
-    height: 315px;
+    width: 300px;
+    height: 169px;
 }
 
 
@@ -538,7 +541,20 @@ HEADER 800px
    FILM PAGE
 *************/
 
+.yt-video > iframe{
+    width: 300px;
+    height: 169px;
+}
 
+#film-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 0px;
+    justify-content: center;
+    align-items: center;
+}
 
 /*************
     photo 
@@ -557,7 +573,7 @@ HEADER 800px
 }
 
 .portrait-card > a > img{  
-    width: 500px;
+    width: 300px;
     overflow: hidden;
     height: auto;
     margin: 50px;
