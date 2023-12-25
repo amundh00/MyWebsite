@@ -398,10 +398,6 @@ hr{
     align-items: center;
 }
 
-.yt-container{
-    
-}
-
 .yt-video > iframe{
     width: 300px;
     height: 169px;
