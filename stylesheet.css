@@ -382,7 +382,27 @@ hr{
      CODING
 ****************/
 
+/****************
+     Film Page
+****************/
 
+#film-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.yt-container{
+    width: 300px;
+    height: auto;
+}
+
+.yt-video > iframe{
+    width: 560px;
+    height: 315px;
+}
 
 
 
