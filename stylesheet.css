@@ -691,6 +691,7 @@ About me cards
 
 .card-container > div > div > p{
     max-width: 800px;
+    padding: 25px;
 }
 
 .card-container{
