@@ -25,14 +25,14 @@ h1{
 }
 
 h2, h3{
-    font-size: 25px;
+    font-size: 20px;
 }
 
 p{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 main{
@@ -373,6 +373,49 @@ hr{
    CONTACT ME
 ***************/
 
+/****************
+3D and VFX
+****************/
+
+#vfx-main{
+    display: flex;
+    flex-direction: column;
+}
+
+.vfx-videos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    margin-top: 50px;
+}
+
+.vfx-videos > iframe{
+    width: 300px;
+    height: 169px; 
+    margin: 25px;
+}
+
+.tred-images{
+    display: grid;
+    align-self: center;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+}
+
+.tred-images > div{
+    width: 300px;
+    height: 169px;
+    overflow: hidden;
+}
+
+.tred-images > div > img{
+    width: 100%;
+    height: auto;
+    margin: 10px;
+}
 
 
 /****************
@@ -398,6 +441,13 @@ hr{
     grid-row-gap: 0px;
     justify-content: center;
     align-items: center;
+    margin: 25px;
+}
+
+.yt-video{
+    display: flex;
+    flex-direction: column;
+    height: 25  0px;
 }
 
 .yt-video > iframe{
@@ -405,7 +455,28 @@ hr{
     height: 169px;
 }
 
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
 
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }
 
 /**************
     FOOTER
@@ -548,11 +619,45 @@ HEADER 800px
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 50px;
-    grid-row-gap: 20px;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
     justify-content: center;
     align-items: center;
 }
+
+/**************
+3d and vfx
+**************/
+
+#vfx-main{
+    display: flex;
+    flex-direction: column;
+}
+
+.vfx-videos > iframe{
+    width: 800px;
+    height: 450px; 
+    margin: 25px;
+}
+
+.tred-images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.tred-images > div{
+    width: 450px;
+    height: 253px;
+}
+
+.tred-images > div > img{
+    width: 100%;
+    height: auto;
+}
+
 
 /*************
     photo 
