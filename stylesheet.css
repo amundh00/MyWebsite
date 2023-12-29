@@ -3,6 +3,7 @@
     src: url(fonts/LEMONMILK-Regular.otf);
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -10,6 +11,7 @@
     src: url(fonts/LEMONMILK-Light.otf);
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 h1,h2,h3{
