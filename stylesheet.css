@@ -328,6 +328,7 @@ hr{
 .card-right > div > p{
     font-size: 1.2em;
     line-height: 35px;
+    text-align: left;
 }
 
 .card-right > div > img{
@@ -359,11 +360,10 @@ hr{
 .card-left > div > p{
     font-size: 1.2em;
     line-height: 35px;
+    text-align: left;
 }
 
-.card-container > div > div > p{
-    max-width: 300px;
-}
+
 
 .card-container{
     display: flex;
@@ -552,7 +552,11 @@ hr{
 .yt-video{
     display: flex;
     flex-direction: column;
-    height: 25  0px;
+    margin: 25px;
+}
+
+#film-main > p{
+    width: 80%;
 }
 
 .yt-video > iframe{
@@ -728,6 +732,10 @@ HEADER 800px
     grid-row-gap: 30px;
     justify-content: center;
     align-items: center;
+}
+
+#film-main > p{
+    width: 900px;
 }
 
 /**************
