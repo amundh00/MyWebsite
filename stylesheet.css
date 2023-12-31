@@ -25,14 +25,14 @@ h1{
 }
 
 h2, h3{
-    font-size: 20px;
+    font-size: 25px;
 }
 
 p{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 main{
@@ -45,6 +45,10 @@ li{
 
 body{
     margin: 0;
+}
+
+iframe{
+    border-radius: 5px;
 }
 
 
@@ -382,6 +386,14 @@ hr{
     flex-direction: column;
 }
 
+#vfx-main > div > p{
+    width: 80%;
+}
+
+.vr-info > div > p{
+    width: 80%;
+}
+
 .vfx-videos{
     display: flex;
     flex-direction: column;
@@ -415,6 +427,99 @@ hr{
     width: 100%;
     height: auto;
     margin: 10px;
+}
+
+.vr-game{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.vr-game > div{
+    margin-top: 25px;
+}
+
+.vr-game > div > img{
+    width: 300px;
+    height: auto;
+}
+
+.vr-game > iframe{
+    width: 300px;
+    height: 169px; 
+    margin: 25px;
+}
+
+.vr-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.vr-info > div{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0 25px 0;
+}
+
+.vr-info > div > img{
+    width: 300px;
+    height: auto;
+    margin: 25px;
+}
+
+.sketchfab{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.sketchfab > a{
+    background-color: #10596A;
+    color: white;
+    border: 0;
+    width: 250px;
+    height: 50px;
+    border-radius: 5px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 25px;
+    font-size: 25px;
+    font-family: '  lemonregular';
+}
+
+.sketchfab > a:hover{
+    color: black;
+    background-color: white;
+}
+
+.vfx{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.vfx > div{
+    width: 80%;
+    
+}
+
+.vfx > iframe{
+    width: 300px;
+    height: 169px; 
+    margin: 25px;
 }
 
 
@@ -634,6 +739,10 @@ HEADER 800px
     flex-direction: column;
 }
 
+#vfx-main > div > p{
+    width: 800px;
+}
+
 .vfx-videos > iframe{
     width: 800px;
     height: 450px; 
@@ -656,6 +765,104 @@ HEADER 800px
 .tred-images > div > img{
     width: 100%;
     height: auto;
+}
+
+.vr-game{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.vr-game > div{
+    margin-top: 25px;
+}
+
+.vr-game > div > img{
+    width: 800px;
+    height: auto;
+}
+
+.vr-game > div > iframe{
+    width: 800px;
+    height: 450px; 
+    margin: 25px;
+}
+
+.vr-game-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.vr-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.vr-info > div{
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0 25px 0;
+}
+
+.vr-info > div > img{
+    width: 300px;
+    height: auto;
+    margin: 25px;
+}
+
+.sketchfab{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.sketchfab > a{
+    background-color: #10596A;
+    color: white;
+    border: 0;
+    width: 250px;
+    height: 50px;
+    border-radius: 5px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 25px;
+    font-size: 25px;
+    font-family: '  lemonregular';
+}
+
+.sketchfab > a:hover{
+    color: black;
+    background-color: white;
+}
+
+.vfx{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.vfx > div{
+    width: 80%;
+    
+}
+
+.vfx > iframe{
+    width: 800px;
+    height: 450px; 
+    margin: 25px;
 }
 
 
