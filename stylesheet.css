@@ -484,7 +484,7 @@ hr{
 }
 
 .sketchfab > a{
-    background-color: #10596A;
+    background-color: #768E98;
     color: white;
     border: 0;
     width: 250px;
@@ -495,13 +495,15 @@ hr{
     align-items: center;
     display: flex;
     margin: 25px;
-    font-size: 25px;
-    font-family: '  lemonregular';
+    font-size: 20px;
+    font-family: 'lemonregular';
+    transition: transform 1s;
 }
 
 .sketchfab > a:hover{
-    color: black;
+    color: #768E98;
     background-color: white;
+    transform: scale(1.2);
 }
 
 .vfx{
@@ -874,7 +876,7 @@ HEADER 800px
 }
 
 .sketchfab > a{
-    background-color: #10596A;
+    background-color: #768E98;
     color: white;
     border: 0;
     width: 250px;
@@ -885,12 +887,11 @@ HEADER 800px
     align-items: center;
     display: flex;
     margin: 25px;
-    font-size: 25px;
-    font-family: '  lemonregular';
+    font-family: 'lemonregular';
 }
 
 .sketchfab > a:hover{
-    color: black;
+    color: #768E98;
     background-color: white;
 }
 
