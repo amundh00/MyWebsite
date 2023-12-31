@@ -527,6 +527,45 @@ hr{
      CODING
 ****************/
 
+.coding-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.coding-main > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 25px;
+}
+
+.coding-main > div > a{
+    color: white;
+    background-color: #768E98;
+    text-decoration: none;
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-family: 'lemonregular';
+    margin: 25px;
+    transition: transform 1s;
+}
+
+.coding-main > div > a:hover{
+    color: #768E98;
+    background-color: white;
+    transform: scale(1.2);
+}
+
 /****************
      Film Page
 ****************/
@@ -1035,6 +1074,14 @@ Kontakt meg
 
 #contacttext > p{
     margin: 20px 0 20px 0;
+}
+
+/*****************
+Koding
+*****************/
+
+.coding-main > div{
+    width: 800px;
 }
 
 
