@@ -534,7 +534,10 @@ hr{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+}
+
+.coding-main > hr{
+    width: 80%;
 }
 
 .coding-main > div{
@@ -1082,6 +1085,10 @@ Koding
 *****************/
 
 .coding-main > div{
+    width: 800px;
+}
+
+.coding-main > hr{
     width: 800px;
 }
 
