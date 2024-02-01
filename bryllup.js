@@ -1,0 +1,35 @@
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Replace 'images' with your actual folder path
+    const folderPath = 'images/bryllup';
+
+    // Get a reference to the ul element
+    const ul = document.getElementById('imageListBryllup');
+
+    // Dummy data - you should fetch the list of images dynamically
+    const imageArray = [
+        'Bryllup (16 of 125).jpg',
+        'Bryllup (21 of 125).jpg',
+        'Bryllup (29 of 125).jpg',
+        'Bryllup (30 of 125).jpg',
+        'Bryllup (34 of 125).jpg',
+        'Bryllup (35 of 125).jpg',
+        'Bryllup (70 of 125).jpg',
+        'Bryllup (87 of 125).jpg',
+        'Bryllup (88 of 125).jpg',
+        'Bryllup (91 of 125).jpg',
+        'Bryllup (107 of 125).jpg',
+    ];
+
+    // Loop through the array of images and create list items
+    imageArray.forEach(image => {
+        const li = document.createElement('li');
+        const img = document.createElement('img');
+        img.src = `${folderPath}/${image}`;
+        img.alt = image;
+        li.appendChild(img);
+        ul.appendChild(li);
+    });
+});
+
