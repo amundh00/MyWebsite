@@ -2,7 +2,7 @@
 
 document.addEventListener('DOMContentLoaded', function () {
     // Replace 'images' with your actual folder path
-    const folderPath = 'images/portraits';
+    const folderPath = 'images/Portraits';
 
     // Get a reference to the ul element
     const ul = document.getElementById('imageListPortrait');
