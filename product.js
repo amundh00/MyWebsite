@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const ul = document.getElementById('imageListProduct');
 
     // Dummy data - you should fetch the list of images dynamically
-    const imageArray = [
+    const imageArrayProduct = [
         'G Wag (1 of 12).jpg',
         'G Wag (2 of 12).jpg',
         'G Wag (3 of 12).jpg',
@@ -31,8 +31,10 @@ document.addEventListener('DOMContentLoaded', function () {
         'P1100353.jpg',
     ];
 
+    const shuffledProductImageArray = shuffleArray(imageArrayProduct);
+
     // Loop through the array of images and create list items
-    imageArray.forEach(image => {
+    shuffledProductImageArray*.forEach(image => {
         const li = document.createElement('li');
         const img = document.createElement('img');
         img.src = `${folderPath}/${image}`;
@@ -41,4 +43,17 @@ document.addEventListener('DOMContentLoaded', function () {
         ul.appendChild(li);
     });
 });
+
+function shuffleArray(array) {
+    // Loop through the array in reverse order
+    for (let i = array.length - 1; i > 0; i--) {
+        // Generate a random index between 0 and i (inclusive)
+        const j = Math.floor(Math.random() * (i + 1));
+
+        // Swap the elements at positions i and j in the array
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    // Return the shuffled array
+    return array;
+}
 
