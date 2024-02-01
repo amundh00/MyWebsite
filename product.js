@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const shuffledProductImageArray = shuffleArray(imageArrayProduct);
 
     // Loop through the array of images and create list items
-    shuffledProductImageArray*.forEach(image => {
+    shuffledProductImageArray.forEach(image => {
         const li = document.createElement('li');
         const img = document.createElement('img');
         img.src = `${folderPath}/${image}`;
