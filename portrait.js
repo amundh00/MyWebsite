@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const ul = document.getElementById('imageListPortrait');
 
     // Dummy data - you should fetch the list of images dynamically
-    const imageArray = [
+    const imageArrayPortrait = [
         'HW (2 of 9).jpg',
         'HW (7 of 9).jpg',
         'HW (8 of 9).jpg',
@@ -26,8 +26,10 @@ document.addEventListener('DOMContentLoaded', function () {
         'tuvada (4 of 9).jpg',
     ];
 
+    const shuffledImageArrayPortrait = shuffleArray(imageArrayPortrait);
+
     // Loop through the array of images and create list items
-    imageArray.forEach(image => {
+    shuffledImageArrayPortrait.forEach(image => {
         const li = document.createElement('li');
         const img = document.createElement('img');
         img.src = `${folderPath}/${image}`;
@@ -37,3 +39,10 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
