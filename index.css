@@ -117,6 +117,9 @@ main {
     flex-direction: column;
     width: 100%;
     padding: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    padding: 10px;
 }
 
 .index-nav > ul > li{
@@ -171,6 +174,7 @@ main {
     flex-direction: row;
     justify-content: space-evenly;
     width: 100%;
+    background-color: transparent;
 }
 
 .index-nav > ul > li > a{
