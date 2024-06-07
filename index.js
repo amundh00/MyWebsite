@@ -2,11 +2,15 @@ document.addEventListener('DOMContentLoaded', function() {
     var video = document.getElementById('bg-video');
 
     function attemptPlay() {
-        video.play().then(() => {
-            console.log('Video played successfully');
-        }).catch((error) => {
-            console.error('Error attempting to play video:', error);
-        });
+        if (video) {
+            video.play().then(() => {
+                console.log('Video played successfully');
+            }).catch((error) => {
+                console.error('Error attempting to play video:', error);
+            });
+        } else {
+            console.error('Video element not found');
+        }
     }
 
     attemptPlay();
