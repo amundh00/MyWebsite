@@ -562,15 +562,16 @@ hr{
     color: white;
     background-color: #768E98;
     text-decoration: none;
-    width: 150px;
-    height: 50px;
+    width: auto;
+    height: 30px;
     font-size: 15px;
+    padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
     font-family: 'lemonregular';
-    margin: 25px;
+    margin: 10px;
     transition: transform 1s;
 }
 
@@ -578,6 +579,19 @@ hr{
     color: #768E98;
     background-color: white;
     transform: scale(1.2);
+}
+
+.coding-thumbnails{
+    width: 800px;
+    height: 300px;
+    overflow: hidden;
+    object-position: center;
+    object-fit: cover;
+    margin: 20px;
+}
+
+.coding-thumbnails > img{
+    width: 100%;
 }
 
 /****************
