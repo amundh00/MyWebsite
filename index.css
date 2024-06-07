@@ -60,6 +60,46 @@ body, html {
     white-space: wrap;
 }
 
+
+
+main {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+
+#index-text {
+    position: relative;
+    z-index: 2;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.background-video-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+}
+
 #index-text{
     position: absolute;
     top: 50%;
@@ -90,35 +130,14 @@ body, html {
     font-size: 20px;
 }
 
-/************
-HEROPICTURE
-************/
 
-.background-video{
-    display: none;
-}
 
-#phone-bg{
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-}
-
-#phone-bg > img{
-    display: flex;
-    z-index: -1;
-    height: 800px;
-}
 
 @media (min-width: 1000px){
 
 /*************
    Index
 *************/
-
-#phone-bg{
-    display: none;
-}
 
 .h-one{
     color: white;
@@ -132,16 +151,6 @@ HEROPICTURE
     -webkit-text-stroke: 1px #fff;
     color: transparent;
     cursor: pointer;
-}
-
-.background-video{
-    display: block;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    z-index: -1;
-    width: 100%;
-    height: auto;
 }
 
 #index-text{
