@@ -124,13 +124,32 @@ main {
 
 .index-nav > ul > li{
     padding: 5px;
-    text-align: center;
+    text-align: center;   
 }
 
 .index-nav > ul > li > a{
     text-decoration: none;
     color: white;
     font-size: 20px;
+    text-transform: uppercase;
+}
+
+.index-nav > ul > li > a:after{
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.index-nav > ul > li > a:hover:after{
+    width: 100%; 
+    left: 0;
 }
 
 
@@ -182,7 +201,7 @@ main {
     white-space: nowrap;
 }
 
-.index-nav > ul > li > a:hover{
+.index-nav > ul > li > a::after{
     color: white;
     cursor: pointer;
     text-decoration: underline;
